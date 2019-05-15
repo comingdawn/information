@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>信息收集</title>
+        <link rel="stylesheet" href="css/reset.css" type="text/css">
+        <link rel="stylesheet" href="css/information.css" type="text/css" >
+        <script rel="script" type="text/javascript" src="js/information.js"></script>
+        <script rel="script" type="text/javascript" src="js/fastclick.js"></script>
+    </head>
+
+    <body>
+        <div class="bg">
+            <div class="header"></div>
+            <div class="container">
+                <!--姓名-->
+                <div id="Name">
+                    <div class="Name-pc"></div>
+                    <input class="Name-input" type="text" name="Name" placeholder="请输入姓名" onchange="Name()"/>
+                </div>
+                <!--性别-->
+                <div class="Gender">
+                    <div id="Gender-pc"></div>
+                    <form>
+                        <!--<label>性别：</label>-->
+                        <label><span>男&nbsp;</span><input type="radio" value="1" name="Gender" onclick="Sex()"><span></span></label>
+                        <label><span>女&nbsp;</span><input type="radio" value="2" name="Gender" onchange="Sex()"><span></span></label>
+                    </form>
+                </div>
+                <!--学院-->
+                <div class="School">
+                    <div id="School-pc"></div>
+                    <input type="text" name="School" placeholder="请输入学院" onchange="School()">
+                </div>
+                <!--学号-->
+                <div class="Number">
+                    <div id="Number-pc"></div>
+                    <input type="text" name="Number" placeholder="请输入学号" onchange="Number()">
+                </div>
+                <!--手机号码-->
+                <div class="Phone">
+                    <div id="Phone-pc"></div>
+                    <input type="text" name="Phone" placeholder="请输入联系方式" onchange="Phone()">
+                </div>
+                <!--提交按钮-->
+                <div id="submit">
+                    <div id="submitbtn">
+                        <div id="submitbutton" ontouchstart="buttonclick()" ontouchend="buttonsubmit()">提交信息</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+            </div>
+        </div>
+    </body>
+</html>
